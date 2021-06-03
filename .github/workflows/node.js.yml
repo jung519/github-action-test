@@ -50,6 +50,8 @@ jobs:
         mysql database: test
         # MYSQL_USER - create the specified user with superuser power for created database
         mysql user: root
+        # MYSQL_PASSWORD - specified superuser password which user is power for created database
+        mysql password: test
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
